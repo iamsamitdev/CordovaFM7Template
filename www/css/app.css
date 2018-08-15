@@ -1,0 +1,144 @@
+/* Your app styles here */
+
+.ios .tabbar-labels .tab-link:not(.tab-link-active) .icon-ios-fill {
+  display: none;
+}
+
+.ios .tabbar-labels .tab-link.tab-link-active .icon:not(.icon-ios-fill) {
+  display: none;
+}
+
+.demo-swiper{
+  margin-bottom: 0px !important;
+}
+
+/*  Slideer */
+.demo-swiper .swiper-slide {
+  font-size: 25px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  color: #000;
+}
+
+.demo-swiper .swiper-slide {
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+.demo-swiper {
+  margin: 0px 0 35px;
+  font-size: 18px;
+  height: 150px;
+}
+
+.demo-swiper img {
+  width: 100%;
+}
+
+.demo-swiper.demo-swiper-auto .swiper-slide {
+  width: 85%;
+}
+
+.demo-swiper.demo-swiper-auto .swiper-slide:nth-child(2n) {
+  width: 70%;
+}
+
+.demo-swiper.demo-swiper-auto .swiper-slide:nth-child(3n) {
+  width: 30%;
+}
+
+.row{
+  margin: 15px 10px;
+}
+
+.row.first{
+  margin-top: 15px;
+}
+
+.sqboxmenu{
+  background: #00695C;
+  padding-top: 15px;
+  border-radius: 10px;
+}
+
+.sqboxmenu:hover{
+  cursor: pointer;
+}
+
+.sqboxmenu .icon{
+   font-size: 30px;
+   color: #fff;
+}
+
+.sqboxmenu p{
+  padding-top: 0px;
+  margin-top: 0px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.hmenu{
+  height: 150px;
+  margin-bottom: 5px;
+  position: relative
+}
+
+.hmenu img{
+  height: 150px;
+  position: absolute
+}
+
+.hmenu h3{
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  color: #fff;
+  z-index: 99;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.header-panel{
+  height: 180px;
+  background: url('../images/bg/bg.png');
+  background-size: cover;
+  overflow: hidden;
+}
+
+.header-panel img{
+  width: 80px;
+  height: 80px;
+  border-radius: 43px;
+  border:3px solid #fff;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.header-panel h2{
+  margin: 0px;
+  margin-left: 20px;
+  padding: 0px;
+  color: #fff;
+}
+
+.header-panel p {
+  margin: 0px;
+  margin-left: 20px;
+  padding: 0px;
+  color: #fff;
+}
+
+/**** CARD VIEW ****/
+.demo-card-header-pic .card-header {
+  height: 40vw;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+.demo-card-header-pic .card-content-padding .date{
+  color: #8e8e93;
+}

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#2196f3">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <title>Genius Template</title>
+
+  <link rel="stylesheet" href="framework7/css/framework7.min.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="color-theme-green">
+
+  <div id="app">
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar"></div>
+    <!-- Left panel with cover effect-->
+    <div class="panel panel-left panel-cover">
+      <div class="view">
+        <div class="page">
+          <div class="page-content">
+
+            <div class="header-panel">
+              <img src="images/profile/profile.jpg" alt="">
+              <h2>Marisa Reen</h2>
+              <p>marisa@gmail.com</p>
+            </div>
+
+            <div class="list">
+                <ul>
+
+                  <li>
+                    <a href="#" class="item-link item-content">
+                      <div class="item-media">
+                          <i class="icon f7-icons ios-only">home</i>
+                          <i class="icon material-icons md-only">home</i>
+                      </div>
+                      <div class="item-inner">
+                        <div class="item-title">Schedule</div>
+                      </div>
+                    </a>
+                  </li>
+
+                   <li>
+                    <a href="#" class="item-link item-content">
+                      <div class="item-media">
+                          <i class="icon f7-icons ios-only">eye</i>
+                          <i class="icon material-icons md-only">cloud_upload_fill</i>
+                      </div>
+                      <div class="item-inner">
+                        <div class="item-title">Payment</div>
+                      </div>
+                    </a>
+                  </li>
+
+                   <li>
+                    <a href="#" class="item-link item-content">
+                      <div class="item-media">
+                          <i class="icon f7-icons ios-only">home</i>
+                          <i class="icon material-icons md-only">cloud_fill</i>
+                      </div>
+                      <div class="item-inner">
+                        <div class="item-title">Instruction</div>
+                      </div>
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>           
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Views/Tabs container -->
+    <div class="views tabs ios-edges">
+      <!-- Tabbar for switching views-tabs -->
+      <div class="toolbar tabbar-labels toolbar-bottom-md">
+        <div class="toolbar-inner">
+          
+          <a href="#view-home" class="tab-link tab-link-active">
+            <i class="icon f7-icons ios-only">home</i>
+            <i class="icon f7-icons ios-only icon-ios-fill">home_fill</i>
+            <i class="icon material-icons md-only">home</i>
+            <span class="tabbar-label">หน้าหลัก</span>
+          </a>
+
+          <a href="#view-course" class="tab-link">
+            <i class="icon f7-icons ios-only">book</i>
+            <i class="icon f7-icons ios-only icon-ios-fill">book_fill</i>
+            <i class="icon material-icons md-only">book</i>
+            <span class="tabbar-label">หลักสูตร</span>
+          </a>
+
+          <a href="#view-service" class="tab-link">
+              <i class="icon f7-icons ios-only">folder</i>
+              <i class="icon f7-icons ios-only icon-ios-fill">folder_fill</i>
+              <i class="icon material-icons md-only">folder</i>
+              <span class="tabbar-label">บริการ</span>
+          </a>
+
+          <a href="#view-contact" class="tab-link">
+            <i class="icon f7-icons ios-only">email</i>
+            <i class="icon f7-icons ios-only icon-ios-fill">email_fill</i>
+            <i class="icon material-icons md-only">email</i>
+            <span class="tabbar-label">ติดต่อเรา</span>
+          </a>
+
+          <a href="#view-settings" class="tab-link">
+            <i class="icon f7-icons ios-only">settings</i>
+            <i class="icon f7-icons ios-only icon-ios-fill">settings_fill</i>
+            <i class="icon material-icons md-only">settings</i>
+            <span class="tabbar-label">ตั้งค่า</span>
+          </a>
+
+        </div>
+      </div>
+      <!-- Your main view/tab, should have "view-main" class. It also has "tab-active" class -->
+      <div id="view-home" class="view view-main tab tab-active">
+        <!-- Page, data-name contains page name which can be used in page callbacks -->
+        <div class="page" data-name="home">
+          <!-- Top Navbar -->
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="left">
+                <a href="#" class="link icon-only panel-open" data-panel="left">
+                  <i class="icon f7-icons ios-only">menu</i>
+                  <i class="icon material-icons md-only">menu</i>
+                </a>
+              </div>
+              <div class="title sliding">หน้าหลัก</div>
+              <div class="right">
+                <a href="#" class="link login-screen-open" data-login-screen="#my-login-screen">
+                  <i class="icon f7-icons ios-only">person</i>
+                  <i class="icon material-icons md-only">person</i>
+                  ลงทะเบียน
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Scrollable page content-->
+          <div class="page-content">
+
+              <!--Slide Image-->
+              <div data-pagination='{"el": ".swiper-pagination"}' data-space-between="50" class="swiper-container swiper-init demo-swiper">
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/slide/slide_1.jpg"></div>
+                    <div class="swiper-slide"><img src="images/slide/slide_2.jpg"></div>
+                    <div class="swiper-slide"><img src="images/slide/slide_3.jpg"></div>
+                  </div>
+              </div>
+
+              <!-- Gride Menu-->
+              <div class="">
+                <div class="row first">
+                    <div class="col text-align-center sqboxmenu">
+                      <i class="icon f7-icons ios-only">tune</i>
+                      <i class="icon material-icons md-only">tune</i>
+                      <p>Menu 1</p>
+                    </div>
+                    <div class="col text-align-center sqboxmenu">
+                      <i class="icon f7-icons ios-only">star</i>
+                      <i class="icon material-icons md-only">star</i>
+                      <p>Menu 2</p>
+                    </div>
+                    <div class="col text-align-center sqboxmenu">
+                      <i class="icon f7-icons ios-only">mic</i>
+                      <i class="icon material-icons md-only">mic</i>
+                      <p>Menu 3</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-align-center sqboxmenu">
+                      <i class="icon f7-icons ios-only">info</i>
+                      <i class="icon material-icons md-only">info</i>
+                      <p>Menu 4</p>
+                    </div>
+                    <div class="col text-align-center sqboxmenu">
+                      <i class="icon f7-icons ios-only">flag</i>
+                      <i class="icon material-icons md-only">flag</i>
+                      <p>Menu 5</p>
+                    </div>
+                    <div class="col text-align-center sqboxmenu">
+                      <i class="icon f7-icons ios-only">chat</i>
+                      <i class="icon material-icons md-only">chat</i>
+                      <p>Menu 6</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-align-center sqboxmenu">
+                      <i class="icon f7-icons ios-only">bookmark</i>
+                      <i class="icon material-icons md-only">bookmark</i>
+                      <p>Menu 7</p>
+                    </div>
+                    <div class="col text-align-center sqboxmenu">
+                      <i class="icon f7-icons ios-only">alarm</i>
+                      <i class="icon material-icons md-only">alarm</i>
+                      <p>Menu 8</p>
+                    </div>
+                    <div class="col text-align-center sqboxmenu">
+                      <i class="icon f7-icons ios-only">camera</i>
+                      <i class="icon material-icons md-only">camera</i>
+                      <p>Menu 9</p>
+                    </div>
+                </div>
+              </div>
+
+
+              <div class="hmenu">
+                  <img src="images/bg/hm1.jpg" alt="">
+                  <h3>Menu 10</h3>
+              </div>
+
+              <div class="hmenu">
+                  <img src="images/bg/hm2.jpg" alt="">
+                  <h3>Menu 11</h3>
+              </div>
+
+              <div class="hmenu">
+                  <img src="images/bg/hm3.jpg" alt="">
+                  <h3>Menu 12</h3>
+              </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Course View -->
+      <div id="view-course" class="view tab">
+        <!-- Course page will be loaded here dynamically from /course/ route -->
+      </div>
+
+      <!-- Service View -->
+      <div id="view-service" class="view tab">
+          <!-- Service page will be loaded here dynamically from /service/ route -->
+      </div>
+
+      <!-- Contact View -->
+      <div id="view-contact" class="view tab">
+          <!-- Contact page will be loaded here dynamically from /contact/ route -->
+      </div>
+
+      <!-- Settings View -->
+      <div id="view-settings" class="view tab">
+        <!-- Settings page will be loaded here dynamically from /settings/ route -->
+      </div>
+    </div>
+
+    <!-- Login Screen -->
+    <div class="login-screen" id="my-login-screen">
+      <div class="view">
+        <div class="page">
+          <div class="page-content login-screen-content">
+            <div class="login-screen-title">ลงทะเบียน</div>
+            <div class="list">
+              <ul>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Username</div>
+                    <div class="item-input-wrap">
+                      <input type="text" name="username" placeholder="Your username">
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Password</div>
+                    <div class="item-input-wrap">
+                      <input type="password" name="password" placeholder="Your password">
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="list">
+              <ul>
+                <li>
+                  <a href="#" class="item-link list-button login-button">Submit</a>
+                </li>
+              </ul>
+              <div class="block-footer">
+                Some text about login information.<br>Click "Sign In" to close Login Screen<br>
+                <a href="#" class="link login-screen-close">ปิดหน้าจอ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+  <script src="cordova.js"></script>
+  <script src="js/index.js"></script>
+
+  <!-- Framework7 library -->
+  <script src="framework7/js/framework7.min.js"></script>
+
+  <!-- App routes -->
+  <script src="js/routes.js"></script>
+
+  <!-- Your custom app scripts -->
+  <script src="js/app.js"></script>
+
+  <script src="js/custom.js"></script>
+</body>
+</html>
