@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="css/icons.css">
   <link rel="stylesheet" href="css/app.css">
 </head>
-<body class="color-theme-green">
+<body class="color-theme-pink">
 
   <div id="app">
     <!-- Status bar overlay for fullscreen mode-->
@@ -28,8 +28,8 @@
 
             <div class="header-panel">
               <img src="images/profile/profile.jpg" alt="">
-              <h2>Marisa Reen</h2>
-              <p>marisa@gmail.com</p>
+              <h2 id="userFullname"></h2>
+              <p id="userEmail"></p>
             </div>
 
             <div class="list">
@@ -127,7 +127,7 @@
         <!-- Page, data-name contains page name which can be used in page callbacks -->
         <div class="page" data-name="home">
           <!-- Top Navbar -->
-          <div class="navbar">
+          <div class="navbar color-theme-green">
             <div class="navbar-inner">
               <div class="left">
                 <a href="#" class="link icon-only panel-open" data-panel="left">
@@ -136,13 +136,23 @@
                 </a>
               </div>
               <div class="title sliding">หน้าหลัก</div>
-              <div class="right">
-                <a href="#" class="link login-screen-open" data-login-screen="#my-login-screen">
+
+              <div class="right registerbutton">
+                <a href="#" class="link login-screen-open" data-login-screen="#my-register-screen">
                   <i class="icon f7-icons ios-only">person</i>
                   <i class="icon material-icons md-only">person</i>
                   ลงทะเบียน
                 </a>
               </div>
+
+              <div class="right logoutbutton">
+                <a href="#" class="link logout">
+                  <i class="icon f7-icons ios-only">lock</i>
+                  <i class="icon material-icons md-only">lock</i>
+                  ออกจากระบบ
+                </a>
+              </div>
+
             </div>
           </div>
 
@@ -256,8 +266,8 @@
       </div>
     </div>
 
-    <!-- Login Screen -->
-    <div class="login-screen" id="my-login-screen">
+    <!-- Register Screen -->
+    <div class="login-screen" id="my-register-screen">
       <div class="view">
         <div class="page">
           <div class="page-content login-screen-content">
@@ -266,9 +276,9 @@
               <ul>
                 <li class="item-content item-input">
                   <div class="item-inner">
-                    <div class="item-title item-label">Username</div>
+                    <div class="item-title item-label">Email</div>
                     <div class="item-input-wrap">
-                      <input type="text" name="username" placeholder="Your username">
+                      <input type="email" name="email" placeholder="Your Email">
                     </div>
                   </div>
                 </li>
@@ -280,17 +290,45 @@
                     </div>
                   </div>
                 </li>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Fullname</div>
+                    <div class="item-input-wrap">
+                      <input type="text" name="fullname" placeholder="Your Fullname">
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Gender</div>
+                    <div class="item-input-wrap">
+                      <label class="radio">
+                        <input type="radio" name="gender" value="male" checked><i class="icon-radio"></i>
+                      </label> Male &nbsp;&nbsp;
+                      <label class="radio">
+                        <input type="radio" name="gender" value="female"><i class="icon-radio"></i>
+                      </label> Female
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Address</div>
+                    <div class="item-input-wrap">
+                      <textarea name="address" rows="4" placeholder="Your Address"></textarea>
+                    </div>
+                  </div>
+                </li>
               </ul>
             </div>
             <div class="list">
               <ul>
                 <li>
-                  <a href="#" class="item-link list-button login-button">Submit</a>
+                  <a href="#" class="item-link list-button register-button">บันทึกข้อมูล</a>
                 </li>
               </ul>
               <div class="block-footer">
-                Some text about login information.<br>Click "Sign In" to close Login Screen<br>
-                <a href="#" class="link login-screen-close">ปิดหน้าจอ</a>
+                <a href="#" class="link button login-screen-close">ปิดหน้าจอ</a>
               </div>
             </div>
           </div>

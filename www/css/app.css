@@ -12,6 +12,10 @@
   margin-bottom: 0px !important;
 }
 
+.md .login-screen-title{
+  font-size: 20px;
+}
+
 /*  Slideer */
 .demo-swiper .swiper-slide {
   font-size: 25px;
@@ -60,7 +64,7 @@
 }
 
 .sqboxmenu{
-  background: #00695C;
+  background: rgb(173, 3, 131);
   padding-top: 15px;
   border-radius: 10px;
 }
