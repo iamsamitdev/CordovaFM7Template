@@ -58,3 +58,11 @@ $$('#my-login-screen .login-button').on('click', function () {
   app.dialog.alert('Username: ' + username + '<br>Password: ' + password);
 
 });
+
+// jQuery Start here...
+$(function(){
+  $('a[rel=showalert]').click(function(){
+      //alert("OK");
+      app.dialog.alert("OK");
+  });
+});
